@@ -1,0 +1,165 @@
+$color-white: #ffffff
+$color-grey: #ded6d7
+$display: flex
+
+@mixin font ($font-size, $color, $font-weight)
+	font-size: $font-size
+	color: $color
+	font-weight: $font-weight
+p
+	margin: 0
+ul
+	padding: 0
+	list-style: none
+h1,
+h2,
+h3,
+h4
+	margin: 0
+
+body
+	background-color: #dfd7d8
+	margin: 0
+	padding: 0
+	font-family: Quicksand, sans-serif
+
+
+	/*main*/
+	.main
+		margin: 0 auto
+		box-sizing: border-box
+		display: block
+		background-image: url(../img/background.png)
+		background-attachment: fixed
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: 100% 100%
+		width: 750px
+		height: 100%
+		padding: 40px
+		
+		/*nav*/
+		.topnav
+			display: $display
+			flex-flow: row wrap
+			justify-content: space-between
+			margin-bottom: 30px
+			
+		/*profil*/
+		.profil
+			align-items: center
+			display: $display
+			flex-flow: column wrap
+			text-transform: capitalize
+			margin-bottom: 70px
+
+			.profil-h1
+				@include font (48pt, $color-white, bold)
+
+			.profil-h2
+				@include font (24pt, $color-grey, bold)
+
+
+		/*statistic*/
+		.statistic
+			display: $display
+			flex-flow: row wrap
+			justify-content: space-around
+			height: 200px
+				
+			.statistic-li
+				box-sizing: border-box
+				width: 125px
+				height: 125px
+				border-radius: 125px
+				padding-top: 20px
+
+			.text-align
+				text-align: center
+
+			.green
+				background-color: #55a78c
+				@extend .text-align
+
+			.blue
+				background-color: #579ba9
+				@extend .text-align
+
+			.navy
+				background-color: #5a6baa
+				@extend .text-align
+
+			
+
+			.statistic-let
+				@include font (36pt, $color-grey, bold)
+
+			.statistic-text
+				@include font (24pt, $color-grey, bold)
+
+		/*icons		*/
+		.icons
+			display: $display
+			flex-flow: row wrap
+			justify-content: space-between
+			margin-top: 80px
+
+			.icon
+				width: 324px
+				height: 208px
+				margin-bottom: 20px
+			.one
+				background-image: url(../img/pic1.png)
+
+			.two
+				background-image: url(../img/pic2.png)
+
+			.three
+				background-image: url(../img/pic3.png)
+
+			.four
+				background-image: url(../img/pic4.png)
+
+
+		/*footernav*/
+		.footernav
+			display: $display
+			flex-flow: row wrap
+			justify-content: center
+			margin-top: 40px
+
+
+			.footernav-item
+				width: 17px
+				height: 17px
+				background: url(../img/sprite3.png)
+				margin: 0 10px
+
+			.el1
+				background-position: 0px 0px
+			.el1:hover,
+			.el2:hover,
+			.el3:hover,
+			.el4:hover,
+			.el5:hover,
+			.el6:hover,
+			.el7:hover,
+				background: url(../img/red.png)
+
+			.el2
+				background-position: -22px 0px
+
+			.el3
+				background-position: -44px 0px
+			.el4
+				background-position: -66px 0px
+
+			.el5
+				background-position: -88px 0px
+
+			.el6
+				background-position: -110px 0px
+
+			.el6
+				background-position: -132px 0px
+

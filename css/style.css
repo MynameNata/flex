@@ -1,0 +1,208 @@
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+body {
+  background-color: #dfd7d8;
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand, sans-serif;
+  /*main */
+}
+body .main {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  background-image: url(../img/background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 750px;
+  height: 100%;
+  padding: 40px;
+  /*nav */
+  /*profil */
+  /*statistic */
+  /*icons		 */
+  /*footernav */
+}
+body .main .topnav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+body .main .profil {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  text-transform: capitalize;
+  margin-bottom: 70px;
+}
+body .main .profil .profil-h1 {
+  font-size: 48pt;
+  color: white;
+  font-weight: bold;
+}
+body .main .profil .profil-h2 {
+  font-size: 24pt;
+  color: #ded6d7;
+  font-weight: bold;
+}
+body .main .statistic {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 200px;
+}
+body .main .statistic .statistic-li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 125px;
+  height: 125px;
+  border-radius: 125px;
+  padding-top: 20px;
+}
+body .main .statistic .text-align, body .main .statistic .green, body .main .statistic .blue, body .main .statistic .navy {
+  text-align: center;
+}
+body .main .statistic .green {
+  background-color: #55a78c;
+}
+body .main .statistic .blue {
+  background-color: #579ba9;
+}
+body .main .statistic .navy {
+  background-color: #5a6baa;
+}
+body .main .statistic .statistic-let {
+  font-size: 36pt;
+  color: #ded6d7;
+  font-weight: bold;
+}
+body .main .statistic .statistic-text {
+  font-size: 24pt;
+  color: #ded6d7;
+  font-weight: bold;
+}
+body .main .icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+body .main .icons .icon {
+  width: 324px;
+  height: 208px;
+  margin-bottom: 20px;
+}
+body .main .icons .one {
+  background-image: url(../img/pic1.png);
+}
+body .main .icons .two {
+  background-image: url(../img/pic2.png);
+}
+body .main .icons .three {
+  background-image: url(../img/pic3.png);
+}
+body .main .icons .four {
+  background-image: url(../img/pic4.png);
+}
+body .main .footernav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+body .main .footernav .footernav-item {
+  width: 17px;
+  height: 17px;
+  background: url(../img/sprite3.png);
+  margin: 0 10px;
+}
+body .main .footernav .el1 {
+  background-position: 0px 0px;
+}
+body .main .footernav .el1:hover,
+body .main .footernav .el2:hover,
+body .main .footernav .el3:hover,
+body .main .footernav .el4:hover,
+body .main .footernav .el5:hover,
+body .main .footernav .el6:hover,
+body .main .footernav .el7:hover {
+  background: url(../img/red.png);
+}
+body .main .footernav .el2 {
+  background-position: -22px 0px;
+}
+body .main .footernav .el3 {
+  background-position: -44px 0px;
+}
+body .main .footernav .el4 {
+  background-position: -66px 0px;
+}
+body .main .footernav .el5 {
+  background-position: -88px 0px;
+}
+body .main .footernav .el6 {
+  background-position: -110px 0px;
+}
+body .main .footernav .el6 {
+  background-position: -132px 0px;
+}
