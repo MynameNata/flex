@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p {
   margin: 0;
 }
@@ -41,6 +42,7 @@ body .main {
   /*statistic */
   /*icons		 */
   /*footernav */
+  /*media */
 }
 body .main .topnav {
   display: -webkit-box;
@@ -55,6 +57,7 @@ body .main .topnav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 30px;
+  /*transition-property, transition-duration, transition-timing-function и transit */
 }
 body .main .profil {
   -webkit-box-align: center;
@@ -143,6 +146,15 @@ body .main .icons .icon {
   width: 324px;
   height: 208px;
   margin-bottom: 20px;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-box-flex 0.4s ease;
+  -webkit-transition: -webkit-flex 0.4s ease;
+  transition: -webkit-box-flex 0.4s ease;
+  transition: -ms-flex 0.4s ease;
+  transition: flex 0.4s ease;
+}
+body .main .icons .icon:hover {
+  opacity: 0.9;
 }
 body .main .icons .one {
   background-image: url(../img/pic1.png);
